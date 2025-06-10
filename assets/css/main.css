@@ -1019,7 +1019,7 @@ section {
 
 /* Estilo para los elementos de lista con iconos en la columna de CONTACTO */
 .footer .footer-content .footer-links ul li {
-  padding: 8px 0; /* Espaciado entre cada elemento de la lista */
+  padding: 2px 0; /* Espaciado entre cada elemento de la lista */
   display: flex; /* Usar flexbox para alinear el icono y el texto */
   align-items: center; /* Centrar verticalmente icono y texto */
 }
@@ -1048,6 +1048,111 @@ section {
   color: #fff; /* Color del icono al pasar el ratón */
 }
 
+/*--------------------------------------------------------------
+# Footer Interactive Elements (AJUSTES FINOS DE DISEÑO)
+--------------------------------------------------------------*/
+
+/* Estilos para el contenedor de cada ítem de contacto */
+.footer .footer-links ul li .contact-item {
+  width: 100%;
+  /* Eliminar o reducir el margen-bottom si lo agregamos antes para que los items no estén tan separados */
+  margin-bottom: 0px; /* Asegura que no haya margen inferior entre items */
+  padding-bottom: 5px; /* Opcional: Pequeño padding si quieres un separador visual invisible */
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* Opcional: Un separador sutil entre elementos */
+}
+
+/* Reducimos el padding de los li si es que lo tenían */
+.footer .footer-links ul li {
+  padding: 5px 0; /* Ajustar este padding para controlar el espaciado vertical entre Email, WhatsApp, Instagram */
+}
+
+/* Estilos para el grupo de iconos de acción (Copiar/Abrir) */
+.footer .footer-links .action-icons {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Reducimos el espacio entre los iconos de acción (de 8px a 5px) */
+}
+
+/* Estilos para los iconos individuales de Copiar/Abrir (CLAVE: ELIMINAR CUADRO TRANSPARENTE) */
+.footer .footer-links .copy-button,
+.footer .footer-links .action-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px; /* Reducimos el tamaño clickeable (de 32px a 28px) */
+  height: 28px;
+  border-radius: 50%; /* Hacemos que sea circular al pasar el ratón para un efecto más suave, no cuadrado */
+  /* ELIMINAR ESTAS LÍNEAS para quitar el recuadro transparente */
+  background-color: transparent; /* Fondo transparente por defecto */
+  border: none; /* Sin borde por defecto */
+  /* Mantenemos el color del icono */
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.footer .footer-links .copy-button i,
+.footer .footer-links .action-icon i {
+  font-size: 16px; /* Mantenemos el tamaño del icono, o ajustamos si es necesario */
+  line-height: 1;
+  margin: 0;
+  color: inherit;
+}
+
+/* Hover effects for action icons (adaptados al nuevo estilo) */
+.footer .footer-links .copy-button:hover,
+.footer .footer-links .action-icon:hover {
+  /* Al pasar el ratón, solo cambiamos el color y quizás una pequeña transformación */
+  color: var(--color-primary); /* Color de tu marca al pasar el ratón */
+  background-color: transparent; /* Aseguramos que siga siendo transparente */
+  border: none; /* Aseguramos que siga sin borde */
+  transform: scale(
+    1.1
+  ); /* Un pequeño zoom o elevación para indicar interactividad */
+  /* Puedes probar también un 'transform: translateY(-2px);' si te gusta el efecto de elevación */
+}
+
+/* Ajuste para el icono del mapa si lo tienes (mantener consistencia si quieres) */
+.footer .footer-contact-center .external-link-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px; /* Ajusta el tamaño para que coincida con los otros iconos de acción */
+  height: 28px;
+  border-radius: 50%; /* Circular en hover */
+  background-color: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.footer .footer-contact-center .map-container {
+  background: #000;
+  border-radius: 20px; /* <--- MODIFICA ESTA LÍNEA (o aumenta el valor) */
+  overflow: hidden; /* Muy importante para que el contenido del iframe se redondee también */
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.footer .footer-contact-center .map-container iframe {
+  display: block;
+  border-radius: inherit; /* Hereda el border-radius de su padre */
+}
+
+.footer .footer-contact-center .external-link-icon:hover {
+  background-color: transparent;
+  border: none;
+  color: var(--color-primary);
+  transform: scale(1.1);
+}
+
+.footer .footer-contact-center .external-link-icon i {
+  font-size: 16px;
+  line-height: 1;
+  margin: 0;
+  color: inherit;
+}
 /*--------------------------------------------------------------
 # WhatsApp Floating Button
 --------------------------------------------------------------*/
