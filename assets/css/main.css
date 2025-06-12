@@ -875,6 +875,126 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Product Detail Modal (Modales de Productos Detallados)
+--------------------------------------------------------------*/
+.product-detail-modal {
+  padding: 30px; /* Espaciado interno de la modal */
+}
+
+.product-detail-modal .modal-section-title {
+  font-size: 16px; /* Tamaño del título de sección (DESCRIPCIÓN, VENTAJAS) */
+  font-weight: 700; /* Negrita */
+  color: var(--color-secondary); /* Color del texto (tu azul oscuro) */
+  text-transform: uppercase; /* Mayúsculas como en la imagen */
+  margin-top: 25px; /* Margen superior para separar secciones */
+  margin-bottom: 10px; /* Margen inferior antes del contenido */
+  padding-bottom: 5px; /* Pequeño padding inferior */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Línea divisoria sutil */
+}
+
+.product-detail-modal .modal-section-title:first-of-type {
+  margin-top: 0; /* Asegura que el primer título de sección no tenga margen superior */
+}
+
+.product-detail-modal p {
+  font-size: 15px; /* Tamaño del texto del párrafo */
+  line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
+  color: var(--color-default); /* Color de texto general de la plantilla */
+  margin-bottom: 15px; /* Margen inferior del párrafo */
+}
+
+/* Estilos para las listas con iconos (Ventajas, Presentación) */
+.product-detail-modal .icon-list {
+  list-style: none; /* Elimina los bullet points por defecto */
+  padding: 0; /* Elimina el padding por defecto de la lista */
+  margin-bottom: 20px; /* Margen debajo de la lista */
+}
+
+.product-detail-modal .icon-list li {
+  font-size: 15px; /* Tamaño del texto de cada ítem de lista */
+  color: var(--color-default);
+  margin-bottom: 8px; /* Margen entre ítems de lista */
+  display: flex; /* Para alinear el icono y el texto */
+  align-items: flex-start; /* Alinea al inicio si el texto es largo */
+}
+
+.product-detail-modal .icon-list li i {
+  font-size: 18px; /* Tamaño del icono */
+  color: var(--color-primary); /* Color del icono (tu rojo/naranja) */
+  margin-right: 8px; /* Espacio entre el icono y el texto */
+  line-height: 1; /* Alineación vertical del icono */
+  flex-shrink: 0; /* Evita que el icono se encoja en pantallas pequeñas */
+}
+
+/* Ajustes para el footer de la modal, si el botón de Mercado Libre está ahí */
+.modal-footer .btn-warning {
+  background-color: #ffc107; /* Color amarillo/naranja de Bootstrap warning */
+  border-color: #ffc107;
+  color: #212529; /* Texto oscuro para el botón de compra */
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.modal-footer .btn-warning:hover {
+  background-color: #e0a800; /* Tono más oscuro al hover */
+  border-color: #e0a800;
+}
+
+/*--------------------------------------------------------------
+# Product Detail Modal - Colors Grid
+--------------------------------------------------------------*/
+.product-detail-modal .colors-grid {
+  margin-top: 20px; /* Espacio superior para separar del párrafo anterior */
+  /* El `g-2` de Bootstrap ya maneja el espaciado, pero puedes ajustarlo */
+}
+
+.product-detail-modal .color-item {
+  margin-bottom: 10px; /* Espacio debajo de cada item de color, para cuando se apilan */
+}
+
+.product-detail-modal .color-swatch {
+  width: 100%; /* El swatch ocupa todo el ancho de su columna */
+  height: 60px; /* Altura fija para el rectángulo de color */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Borde sutil para definir cada muestra */
+  border-radius: 4px; /* Ligeramente redondeado */
+  margin-bottom: 5px; /* Espacio entre el swatch y el texto */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); /* Sombra muy sutil */
+  transition: transform 0.2s ease-in-out; /* Animación para el hover */
+}
+
+.product-detail-modal .color-swatch:hover {
+  transform: translateY(-2px); /* Pequeña elevación al pasar el ratón */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada al hover */
+}
+
+.product-detail-modal .color-code {
+  font-size: 13px; /* Tamaño de la fuente para el código del color */
+  font-weight: 600; /* Negrita */
+  color: var(--color-secondary); /* Color (tu azul oscuro) */
+  margin-bottom: 2px; /* Margen debajo del código */
+}
+
+.product-detail-modal .color-name {
+  font-size: 12px; /* Tamaño de la fuente para el nombre del color */
+  color: var(--color-default); /* Color de texto general */
+  margin-bottom: 0; /* Sin margen inferior */
+  line-height: 1.2; /* Ajuste para el texto */
+}
+
+/* Media query para ajustar el tamaño de los colores en pantallas muy pequeñas */
+@media (max-width: 400px) {
+  .product-detail-modal .color-swatch {
+    height: 50px; /* Un poco más pequeños en móviles muy angostos */
+  }
+  .product-detail-modal .color-code {
+    font-size: 12px;
+  }
+  .product-detail-modal .color-name {
+    font-size: 11px;
+  }
+}
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 .footer {

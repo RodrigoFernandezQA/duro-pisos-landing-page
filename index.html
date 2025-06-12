@@ -176,7 +176,8 @@
                       data-bs-toggle="modal"
                       data-bs-target="#duroCreteProductModal"
                     >
-                      DURO CRETE <i class="bi bi-box-arrow-up-right"></i>
+                      DURO CRETE - Endurecedores para hormigón
+                      <i class="bi bi-box-arrow-up-right"></i>
                     </a>
                   </li>
                   <li>
@@ -186,7 +187,7 @@
                       data-bs-toggle="modal"
                       data-bs-target="#duroFixProductModal"
                     >
-                      DURO FIX
+                      DURO FIX - Microcemento
                       <i class="bi bi-box-arrow-up-right"></i>
                     </a>
                   </li>
@@ -199,6 +200,14 @@
                     >
                       REVOQUE COLOR <i class="bi bi-box-arrow-up-right"></i>
                     </a>
+                  </li>
+                  <li>
+                      <a href="#" 
+                      class="product-link" 
+                      data-bs-toggle="modal" 
+                      data-bs-target="#selladoresProductModal">
+                      SELLADORES <i class="bi bi-box-arrow-up-right"></i>
+                      </a>
                   </li>
                 </ul>
                 <br />
@@ -868,6 +877,7 @@
       <i class="bi bi-whatsapp"></i>
     </a>
     <!-- MODALES CARRUSEL -->
+    <!-- Duro Crete -->
     <div
       class="modal fade"
       id="duroCreteProductModal"
@@ -879,7 +889,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="duroCreteProductModalLabel">
-              DURO CRETE - Endurecedor para Pisos de Hormigón
+              DURO CRETE - Endurecedor en Polvo
             </h5>
             <button
               type="button"
@@ -888,88 +898,382 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body">
-            <div
-              id="duroCreteCarousel"
-              class="carousel slide mb-4"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="assets/img/products/produc1.png"
-                    class="d-block w-100 img-fluid"
-                    alt="Duro Crete Imagen 1"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assets/img/products/produc2.png"
-                    class="d-block w-100 img-fluid"
-                    alt="Duro Crete Imagen 2"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assets/img/products/produc3.png"
-                    class="d-block w-100 img-fluid"
-                    alt="Duro Crete Imagen 3"
-                  />
-                </div>
+          <div class="modal-body product-detail-modal">
+            <h6 class="modal-section-title">DESCRIPCIÓN</h6>
+            <p>
+              Duro Crete es un endurecedor en polvo seco, a base de arenas
+              cuarcíticas clasificadas, pigmentos minerales metálicos y
+              orgánicos (BAYER), no se degradan por la acción de los rayos
+              ultravioletas y cementos CP40 y CP50.
+            </p>
+
+            <!--
+            <h6 class="modal-section-title">VENTAJAS</h6>
+            <ul class="icon-list">
+              <li><i class="bi bi-check-circle"></i> Aumenta la resistencia al desgaste del hormigón</li>
+              <li><i class="bi bi-check-circle"></i> Reduce la formación de polvo</li>
+              <li><i class="bi bi-check-circle"></i> Fácil aplicación y mantenimiento</li>
+              <li><i class="bi bi-check-circle"></i> Ideal para áreas de alto tráfico</li>
+            </ul>
+            -->
+
+            <h6 class="modal-section-title">PRESENTACIÓN</h6>
+            <ul class="icon-list">
+              <li>
+                <i class="bi bi-box-seam"></i> Componente polvo: bolsas de papel
+                de 25kg
+              </li>
+            </ul>
+
+            <h6 class="modal-section-title">COLORES</h6>
+            <p>
+              Se dispone de una gama de 39 colores estándar, para colores no
+              comprendidos en el muestrario, se pueden fabricar a pedido, de
+              acuerdo a lo convenido en el departamento técnico.
+            </p>
+
+            <div class="colors-grid row g-2 justify-content-center">
+              <div
+                class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center"
+              >
+                <div
+                  class="color-swatch"
+                  style="background-color: #f0e8d9"
+                ></div>
+                <p class="color-code">D-014</p>
+                <p class="color-name">Almendra</p>
               </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#duroCreteCarousel"
-                data-bs-slide="prev"
+
+              <div
+                class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center"
               >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#duroCreteCarousel"
-                data-bs-slide="next"
+                <div
+                  class="color-swatch"
+                  style="background-color: #9e3a2f"
+                ></div>
+                <p class="color-code">D-040</p>
+                <p class="color-name">Rojo Colonial</p>
+              </div>
+
+              <div
+                class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center"
               >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+                <div
+                  class="color-swatch"
+                  style="background-color: #dbc39e"
+                ></div>
+                <p class="color-code">D-015</p>
+                <p class="color-name">Arena</p>
+              </div>
+
+              <div
+                class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center"
+              >
+                <div
+                  class="color-swatch"
+                  style="background-color: #ca5c4f"
+                ></div>
+                <p class="color-code">D-041</p>
+                <p class="color-name">Rojo Coral</p>
+              </div>
+
+              <div
+                class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center"
+              >
+                <div
+                  class="color-swatch"
+                  style="background-color: #ebd9b2"
+                ></div>
+                <p class="color-code">D-016</p>
+                <p class="color-name">Arena PP</p>
+              </div>
+
+              <div
+                class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center"
+              >
+                <div
+                  class="color-swatch"
+                  style="background-color: #a03d3d"
+                ></div>
+                <p class="color-code">D-042</p>
+                <p class="color-name">Rojo Ladrillo</p>
+              </div>
+
+              <div
+                class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center"
+              >
+                <div
+                  class="color-swatch"
+                  style="background-color: #2f4f71"
+                ></div>
+                <p class="color-code">D-017</p>
+                <p class="color-name">Azul Naval</p>
+              </div>
+
+              <div
+                class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center"
+              >
+                <div
+                  class="color-swatch"
+                  style="background-color: #e22b2f"
+                ></div>
+                <p class="color-code">D-001</p>
+                <p class="color-name">Rojo Señal</p>
+              </div>
+
+              <div
+                class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center"
+              >
+                <div
+                  class="color-swatch"
+                  style="background-color: #1a284f"
+                ></div>
+                <p class="color-code">D-018</p>
+                <p class="color-name">Azul Noche</p>
+              </div>
+
+              <div
+                class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center"
+              >
+                <div
+                  class="color-swatch"
+                  style="background-color: #f8d100"
+                ></div>
+                <p class="color-code">D-002</p>
+                <p class="color-name">Amarillo Vial</p>
+              </div>
+
+              <div
+                class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center"
+              >
+                <div
+                  class="color-swatch"
+                  style="background-color: #f5f5dc"
+                ></div>
+                <p class="color-code">D-019</p>
+                <p class="color-name">Blanco Tiza</p>
+              </div>
+
+              <div
+                class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center"
+              >
+                <div
+                  class="color-swatch"
+                  style="background-color: #8c6f4f"
+                ></div>
+                <p class="color-code">D-020</p>
+                <p class="color-name">Bronce</p>
+              </div>
+
+              <div
+                class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center"
+              >
+                <div
+                  class="color-swatch"
+                  style="background-color: #b88b6b"
+                ></div>
+                <p class="color-code">D-021</p>
+                <p class="color-name">Caramelo</p>
+              </div>
+
+              <div
+                class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center"
+              >
+                <div
+                  class="color-swatch"
+                  style="background-color: #e2d3b8"
+                ></div>
+                <p class="color-code">D-022</p>
+                <p class="color-name">Crema</p>
+              </div>
+
+              <div
+                class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center"
+              >
+                <div
+                  class="color-swatch"
+                  style="background-color: #4f3229"
+                ></div>
+                <p class="color-code">D-023</p>
+                <p class="color-name">Chocolate</p>
+              </div>
+
+              <div
+                class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center"
+              >
+                <div
+                  class="color-swatch"
+                  style="background-color: #d8b78c"
+                ></div>
+                <p class="color-code">D-024</p>
+                <p class="color-name">Durazno</p>
+              </div>
+
+              <div
+                class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center"
+              >
+                <div
+                  class="color-swatch"
+                  style="background-color: #8a929b"
+                ></div>
+                <p class="color-code">D-025</p>
+                <p class="color-name">Gris Acero</p>
+              </div>
+
+              <div
+                class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center"
+              >
+                <div
+                  class="color-swatch"
+                  style="background-color: #7e8286"
+                ></div>
+                <p class="color-code">D-026</p>
+                <p class="color-name">Gris Cemento WW</p>
+              </div>
+
+              <div
+                class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center"
+              >
+                <div
+                  class="color-swatch"
+                  style="background-color: #8c8c8c"
+                ></div>
+                <p class="color-code">D-027</p>
+                <p class="color-name">Gris Cemento</p>
+              </div>
+
+              <div
+                class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center"
+              >
+                <div
+                  class="color-swatch"
+                  style="background-color: #d2d2d2"
+                ></div>
+                <p class="color-code">D-028</p>
+                <p class="color-name">Gris Natural</p>
+              </div>
+
+              <div
+                class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center"
+              >
+                <div
+                  class="color-swatch"
+                  style="background-color: #b4b4b4"
+                ></div>
+                <p class="color-code">D-029</p>
+                <p class="color-name">Gris Perla PC</p>
+              </div>
+
+              <div
+                class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center"
+              >
+                <div
+                  class="color-swatch"
+                  style="background-color: #9c9c9c"
+                ></div>
+                <p class="color-code">D-030</p>
+                <p class="color-name">Gris Perla</p>
+              </div>
+
+              <div
+                class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center"
+              >
+                <div
+                  class="color-swatch"
+                  style="background-color: #6d6d6d"
+                ></div>
+                <p class="color-code">D-031</p>
+                <p class="color-name">Gris Plomo</p>
+              </div>
+
+              <div
+                class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center"
+              >
+                <div
+                  class="color-swatch"
+                  style="background-color: #5c4b44"
+                ></div>
+                <p class="color-code">D-032</p>
+                <p class="color-name">Marrón Adobe</p>
+              </div>
+
+              <div
+                class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center"
+              >
+                <div
+                  class="color-swatch"
+                  style="background-color: #6e5b4a"
+                ></div>
+                <p class="color-code">D-033</p>
+                <p class="color-name">Marrón Antiguo</p>
+              </div>
+
+              <div
+                class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center"
+              >
+                <div
+                  class="color-swatch"
+                  style="background-color: #7b6856"
+                ></div>
+                <p class="color-code">D-034</p>
+                <p class="color-name">Marrón Azteca</p>
+              </div>
+
+              <div
+                class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center"
+              >
+                <div
+                  class="color-swatch"
+                  style="background-color: #af9c7b"
+                ></div>
+                <p class="color-code">D-035</p>
+                <p class="color-name">Miel</p>
+              </div>
+
+              <div
+                class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center"
+              >
+                <div
+                  class="color-swatch"
+                  style="background-color: #2f2f2f"
+                ></div>
+                <p class="color-code">D-036</p>
+                <p class="color-name">Negro Pizarra</p>
+              </div>
+
+              <div
+                class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center"
+              >
+                <div
+                  class="color-swatch"
+                  style="background-color: #c8c2bb"
+                ></div>
+                <p class="color-code">D-037</p>
+                <p class="color-name">Piedra Clara</p>
+              </div>
+
+              <div
+                class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center"
+              >
+                <div
+                  class="color-swatch"
+                  style="background-color: #ad9e8c"
+                ></div>
+                <p class="color-code">D-038</p>
+                <p class="color-name">Piedra París</p>
+              </div>
+
+              <div
+                class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center"
+              >
+                <div
+                  class="color-swatch"
+                  style="background-color: #ddc8a4"
+                ></div>
+                <p class="color-code">D-039</p>
+                <p class="color-name">Piedra París W</p>
+              </div>
             </div>
-            <p>
-              <strong>Descripción:</strong> DURO CRETE es un endurecedor de
-              superficie líquido formulado para mejorar la resistencia al
-              desgaste y la durabilidad de los pisos de hormigón existentes.
-              Penetra en la superficie, reaccionando con los componentes del
-              hormigón para crear una capa más densa y resistente al polvo.
-            </p>
-
-            <h6>Ventajas:</h6>
-            <ul>
-              <li>Aumenta la resistencia a la abrasión del hormigón.</li>
-              <li>Reduce la formación de polvo.</li>
-              <li>Fácil aplicación y mantenimiento.</li>
-              <li>Ideal para áreas de alto tráfico.</li>
-            </ul>
-
-            <h6>Presentación:</h6>
-            <ul>
-              <li>Envases de 5 Litros</li>
-              <li>Envases de 20 Litros</li>
-              <li>Tambores de 200 Litros</li>
-            </ul>
-
-            <h6>Colores:</h6>
-            <p>
-              Disponible en colores naturales y una gama de colores pigmentados
-              (se especificarán más adelante).
-            </p>
           </div>
           <div class="modal-footer justify-content-between">
             <a
@@ -990,6 +1294,7 @@
         </div>
       </div>
     </div>
+    <!-- Duro Fix -->
     <div
       class="modal fade"
       id="duroFixProductModal"
@@ -1001,7 +1306,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="duroFixProductModalLabel">
-              Microcemento DURO FIX - Revestimiento Cementicio Liso
+              Microcemento DURO FIX
             </h5>
             <button
               type="button"
@@ -1010,73 +1315,334 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body">
-            <div
-              id="duroFixCarousel"
-              class="carousel slide mb-4"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="assets/img/products/produc3.png"
-                    class="d-block w-100 img-fluid"
-                    alt="Duro Fix Imagen 1"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assets/img/hero-carousel/carusel 5.png"
-                    class="d-block w-100 img-fluid"
-                    alt="Duro Fix Imagen 2"
-                  />
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#duroFixCarousel"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#duroFixCarousel"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
+          <div class="modal-body product-detail-modal">
+            <h6 class="modal-section-title">DESCRIPCIÓN</h6>
             <p>
-              <strong>Descripción:</strong> Microcemento DURO FIX es un
-              revestimiento cementicio de alta calidad diseñado para crear
-              superficies lisas y continuas en pisos y paredes. Su bajo espesor
-              lo hace ideal para renovaciones sin grandes obras.
+              Duro Fix microcemento, producto que contiene dos componentes, uno
+              en polvo y el otro líquido. Estos, en una proporción de 2 a 1,
+              deben mezclarse activamente hasta obtener una masa blanda que se
+              aplica con una llana en superficies lisas horizontales y
+              verticales, en un espesor de 1 a 3 mm. Diseñado para variadas
+              aplicaciones en colores cementicios. Puede colocarse sobre
+              concreto, tablero de yeso rígido, revoque, cerámicos, mosaico,
+              mármol, plástico, yeso, etc. Como preparación previa de la
+              superficie se dispone de base niveladora, y base gruesa gris o
+              blanca que se aplica anteriormente a la capa de color.
             </p>
-            <h6>Ventajas:</h6>
-            <ul>
-              <li>Acabado continuo sin juntas.</li>
-              <li>Alta adherencia a diversas superficies.</li>
-              <li>Resistente al agua (si se sella correctamente).</li>
-              <li>Variedad de colores y texturas.</li>
+
+            <h6 class="modal-section-title">VENTAJAS</h6>
+            <ul class="icon-list">
+              <li><i class="bi bi-check-circle"></i> No necesita juntas</li>
+              <li>
+                <i class="bi bi-check-circle"></i> Es incombustible y resistente
+                a la abrasión
+              </li>
+              <li>
+                <i class="bi bi-check-circle"></i> Terminación cemento alisado
+              </li>
             </ul>
-            <h6>Presentación:</h6>
+
+            <h6 class="modal-section-title">PRESENTACIÓN</h6>
+            <ul class="icon-list">
+              <li>
+                <i class="bi bi-box-seam"></i> Componente polvo: bolsas de papel
+                de 25kg
+              </li>
+              <li>
+                <i class="bi bi-box-seam"></i> Componente líquido: baldes de 20
+                litros
+              </li>
+            </ul>
+
+            <h6 class="modal-section-title">COLORES</h6>
             <p>
-              Componente A (líquido) y Componente B (polvo) en kits
-              pre-dosificados.
+              Se usan pigmentos inorgánicos que no se decoloran ni se estropean
+              con los rayos UV. Esta carta de colores responde a un componente
+              digital, no siendo fiel al producto en original, por lo que
+              aconsejamos ver el muestrario de colores del profesional que lo
+              coloca.
             </p>
-            <h6>Colores:</h6>
-            <p>Amplia paleta de colores disponibles a pedido.</p>
+
+            <div class="colors-grid row g-2 justify-content-center">
+              <div class="col-4 col-sm-3 col-md-2 color-item text-center">
+                <div
+                  class="color-swatch"
+                  style="background-color: #f0e8d9"
+                ></div>
+                <p class="color-code">D-014</p>
+                <p class="color-name">Almendra</p>
+              </div>
+
+              <div class="col-4 col-sm-3 col-md-2 color-item text-center">
+                <div
+                  class="color-swatch"
+                  style="background-color: #9e3a2f"
+                ></div>
+                <p class="color-code">D-040</p>
+                <p class="color-name">Rojo Colonial</p>
+              </div>
+
+              <div class="col-4 col-sm-3 col-md-2 color-item text-center">
+                <div
+                  class="color-swatch"
+                  style="background-color: #dbc39e"
+                ></div>
+                <p class="color-code">D-015</p>
+                <p class="color-name">Arena</p>
+              </div>
+
+              <div class="col-4 col-sm-3 col-md-2 color-item text-center">
+                <div
+                  class="color-swatch"
+                  style="background-color: #ca5c4f"
+                ></div>
+                <p class="color-code">D-041</p>
+                <p class="color-name">Rojo Coral</p>
+              </div>
+
+              <div class="col-4 col-sm-3 col-md-2 color-item text-center">
+                <div
+                  class="color-swatch"
+                  style="background-color: #ebd9b2"
+                ></div>
+                <p class="color-code">D-016</p>
+                <p class="color-name">Arena PP</p>
+              </div>
+
+              <div class="col-4 col-sm-3 col-md-2 color-item text-center">
+                <div
+                  class="color-swatch"
+                  style="background-color: #a03d3d"
+                ></div>
+                <p class="color-code">D-042</p>
+                <p class="color-name">Rojo Ladrillo</p>
+              </div>
+
+              <div class="col-4 col-sm-3 col-md-2 color-item text-center">
+                <div
+                  class="color-swatch"
+                  style="background-color: #2f4f71"
+                ></div>
+                <p class="color-code">D-017</p>
+                <p class="color-name">Azul Naval</p>
+              </div>
+
+              <div class="col-4 col-sm-3 col-md-2 color-item text-center">
+                <div
+                  class="color-swatch"
+                  style="background-color: #e22b2f"
+                ></div>
+                <p class="color-code">D-001</p>
+                <p class="color-name">Rojo Señal</p>
+              </div>
+
+              <div class="col-4 col-sm-3 col-md-2 color-item text-center">
+                <div
+                  class="color-swatch"
+                  style="background-color: #1a284f"
+                ></div>
+                <p class="color-code">D-018</p>
+                <p class="color-name">Azul Noche</p>
+              </div>
+
+              <div class="col-4 col-sm-3 col-md-2 color-item text-center">
+                <div
+                  class="color-swatch"
+                  style="background-color: #f8d100"
+                ></div>
+                <p class="color-code">D-002</p>
+                <p class="color-name">Amarillo Vial</p>
+              </div>
+
+              <div class="col-4 col-sm-3 col-md-2 color-item text-center">
+                <div
+                  class="color-swatch"
+                  style="background-color: #f5f5dc"
+                ></div>
+                <p class="color-code">D-019</p>
+                <p class="color-name">Blanco Tiza</p>
+              </div>
+
+              <div class="col-4 col-sm-3 col-md-2 color-item text-center">
+                <div
+                  class="color-swatch"
+                  style="background-color: #8c6f4f"
+                ></div>
+                <p class="color-code">D-020</p>
+                <p class="color-name">Bronce</p>
+              </div>
+
+              <div class="col-4 col-sm-3 col-md-2 color-item text-center">
+                <div
+                  class="color-swatch"
+                  style="background-color: #b88b6b"
+                ></div>
+                <p class="color-code">D-021</p>
+                <p class="color-name">Caramelo</p>
+              </div>
+
+              <div class="col-4 col-sm-3 col-md-2 color-item text-center">
+                <div
+                  class="color-swatch"
+                  style="background-color: #e2d3b8"
+                ></div>
+                <p class="color-code">D-022</p>
+                <p class="color-name">Crema</p>
+              </div>
+
+              <div class="col-4 col-sm-3 col-md-2 color-item text-center">
+                <div
+                  class="color-swatch"
+                  style="background-color: #4f3229"
+                ></div>
+                <p class="color-code">D-023</p>
+                <p class="color-name">Chocolate</p>
+              </div>
+
+              <div class="col-4 col-sm-3 col-md-2 color-item text-center">
+                <div
+                  class="color-swatch"
+                  style="background-color: #d8b78c"
+                ></div>
+                <p class="color-code">D-024</p>
+                <p class="color-name">Durazno</p>
+              </div>
+
+              <div class="col-4 col-sm-3 col-md-2 color-item text-center">
+                <div
+                  class="color-swatch"
+                  style="background-color: #8a929b"
+                ></div>
+                <p class="color-code">D-025</p>
+                <p class="color-name">Gris Acero</p>
+              </div>
+
+              <div class="col-4 col-sm-3 col-md-2 color-item text-center">
+                <div
+                  class="color-swatch"
+                  style="background-color: #7e8286"
+                ></div>
+                <p class="color-code">D-026</p>
+                <p class="color-name">Gris Cemento WW</p>
+              </div>
+
+              <div class="col-4 col-sm-3 col-md-2 color-item text-center">
+                <div
+                  class="color-swatch"
+                  style="background-color: #8c8c8c"
+                ></div>
+                <p class="color-code">D-027</p>
+                <p class="color-name">Gris Cemento</p>
+              </div>
+
+              <div class="col-4 col-sm-3 col-md-2 color-item text-center">
+                <div
+                  class="color-swatch"
+                  style="background-color: #d2d2d2"
+                ></div>
+                <p class="color-code">D-028</p>
+                <p class="color-name">Gris Natural</p>
+              </div>
+
+              <div class="col-4 col-sm-3 col-md-2 color-item text-center">
+                <div
+                  class="color-swatch"
+                  style="background-color: #b4b4b4"
+                ></div>
+                <p class="color-code">D-029</p>
+                <p class="color-name">Gris Perla PC</p>
+              </div>
+
+              <div class="col-4 col-sm-3 col-md-2 color-item text-center">
+                <div
+                  class="color-swatch"
+                  style="background-color: #9c9c9c"
+                ></div>
+                <p class="color-code">D-030</p>
+                <p class="color-name">Gris Perla</p>
+              </div>
+
+              <div class="col-4 col-sm-3 col-md-2 color-item text-center">
+                <div
+                  class="color-swatch"
+                  style="background-color: #6d6d6d"
+                ></div>
+                <p class="color-code">D-031</p>
+                <p class="color-name">Gris Plomo</p>
+              </div>
+
+              <div class="col-4 col-sm-3 col-md-2 color-item text-center">
+                <div
+                  class="color-swatch"
+                  style="background-color: #5c4b44"
+                ></div>
+                <p class="color-code">D-032</p>
+                <p class="color-name">Marrón Adobe</p>
+              </div>
+
+              <div class="col-4 col-sm-3 col-md-2 color-item text-center">
+                <div
+                  class="color-swatch"
+                  style="background-color: #6e5b4a"
+                ></div>
+                <p class="color-code">D-033</p>
+                <p class="color-name">Marrón Antiguo</p>
+              </div>
+
+              <div class="col-4 col-sm-3 col-md-2 color-item text-center">
+                <div
+                  class="color-swatch"
+                  style="background-color: #7b6856"
+                ></div>
+                <p class="color-code">D-034</p>
+                <p class="color-name">Marrón Azteca</p>
+              </div>
+
+              <div class="col-4 col-sm-3 col-md-2 color-item text-center">
+                <div
+                  class="color-swatch"
+                  style="background-color: #af9c7b"
+                ></div>
+                <p class="color-code">D-035</p>
+                <p class="color-name">Miel</p>
+              </div>
+
+              <div class="col-4 col-sm-3 col-md-2 color-item text-center">
+                <div
+                  class="color-swatch"
+                  style="background-color: #2f2f2f"
+                ></div>
+                <p class="color-code">D-036</p>
+                <p class="color-name">Negro Pizarra</p>
+              </div>
+
+              <div class="col-4 col-sm-3 col-md-2 color-item text-center">
+                <div
+                  class="color-swatch"
+                  style="background-color: #c8c2bb"
+                ></div>
+                <p class="color-code">D-037</p>
+                <p class="color-name">Piedra Clara</p>
+              </div>
+
+              <div class="col-4 col-sm-3 col-md-2 color-item text-center">
+                <div
+                  class="color-swatch"
+                  style="background-color: #ad9e8c"
+                ></div>
+                <p class="color-code">D-038</p>
+                <p class="color-name">Piedra París</p>
+              </div>
+
+              <div class="col-4 col-sm-3 col-md-2 color-item text-center">
+                <div
+                  class="color-swatch"
+                  style="background-color: #ddc8a4"
+                ></div>
+                <p class="color-code">D-039</p>
+                <p class="color-name">Piedra París W</p>
+              </div>
+            </div>
           </div>
           <div class="modal-footer justify-content-between">
             <a
@@ -1097,18 +1663,18 @@
         </div>
       </div>
     </div>
+    <!-- Revoque Color -->
     <div
       class="modal fade"
       id="revoqueColorProductModal"
       tabindex="-1"
       aria-labelledby="revoqueColorProductModalLabel"
-      aria-hidden="true"
-    >
+      aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-xl">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="revoqueColorProductModalLabel">
-              Revoque Color - Revestimiento Texturado
+              Revoque Color
             </h5>
             <button
               type="button"
@@ -1117,71 +1683,140 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body">
-            <div
-              id="revoqueColorCarousel"
-              class="carousel slide mb-4"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="assets/img/products/revoquecolor/revoquecolor-1.jpg"
-                    class="d-block w-100 img-fluid"
-                    alt="Revoque Color Imagen 1"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assets/img/products/revoquecolor/revoquecolor-2.jpg"
-                    class="d-block w-100 img-fluid"
-                    alt="Revoque Color Imagen 2"
-                  />
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#revoqueColorCarousel"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#revoqueColorCarousel"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
+          <div class="modal-body product-detail-modal">
+            <h6 class="modal-section-title">DESCRIPCIÓN</h6>
             <p>
-              <strong>Descripción:</strong> Revoque Color es un revestimiento
-              cementicio decorativo que permite crear acabados texturados y de
-              gran personalidad en superficies de pisos y paredes. Ideal para
-              simular efectos como piedra o madera.
+              El revoque color tiene la siguiente composición básica: Minerales
+              de cuarzo en 3 granulometrías fino-mediano-grueso de acuerdo a la
+              terminación deseada. Cemento blanco o gris. Cal y pigmentos
+              (recordemos Bayer), que no se decoloran.
             </p>
-            <h6>Ventajas:</h6>
-            <ul>
-              <li>Gran variedad de texturas y diseños.</li>
-              <li>Alta resistencia a la intemperie.</li>
-              <li>Fácil aplicación y mantenimiento.</li>
-              <li>Excelente durabilidad.</li>
-            </ul>
-            <h6>Presentación:</h6>
-            <p>Sacos de mezcla lista para usar.</p>
-            <h6>Colores:</h6>
-            <p>Colores estándar y personalizados.</p>
-          </div>
+            <p>
+              La preparación es muy sencilla: 1 balde de entre 8 y 12 litros de
+              agua o de solución acrílica por cada bolsa del revoque elegido,
+              calcáreo o acrílico. Estos litros también tienen que ver con el
+              grano utilizado. Se coloca el contenido de ambos ingredientes en
+              una batea (tipo yesero) y se mezcla homogéneamente. Se aconseja
+              dejar hidratar al menos 1/2 hora antes de su aplicación.
+            </p>
+            <p>
+              La aplicación es como cualquier revoque fino: se utilizan
+              herramientas de mano, cuchara, fratacho, llana o fieltro. La
+              superficie debe estar nivelada y libre de polvo. Será mojada con
+              agua en la cantidad necesaria del día en que es aplicado. Puede
+              protegerse también con soplete y de la terminación de acuerdo a la
+              densidad del aplicado. Opcionalmente se puede sellar a las 48
+              horas una mano de sellador acrílico al agua. Esto impide la
+              formación de hongos y facilita el lavado de tierra o manchas no
+              deseadas, además de adicionar dureza extra.
+            </p>
+
+            <h6 class="modal-section-title">TEXTURAS</h6>
+            <div class="colors-grid row g-2 justify-content-center">
+              <div
+                class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center"
+              >
+                <div class="color-swatch-img">
+                  <img
+                    src="assets/img/products/revoquecolor/texturas/0000-granulado-fino.jpg"
+                    alt="Textura Granulado Fino 0000"
+                  />
+                </div>
+                <p class="color-code">0000</p>
+                <p class="color-name">Granulado Fino</p>
+              </div>
+
+              <div
+                class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center"
+              >
+                <div class="color-swatch-img">
+                  <img
+                    src="assets/img/products/revoquecolor/texturas/0000-granulado-intermedio.jpg"
+                    alt="Textura Granulado Intermedio 0000"
+                  />
+                </div>
+                <p class="color-code">0000</p>
+                <p class="color-name">Granulado Intermedio</p>
+              </div>
+
+              <div
+                class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center"
+              >
+                <div class="color-swatch-img">
+                  <img
+                    src="assets/img/products/revoquecolor/texturas/0000-granulado-grueso.jpg"
+                    alt="Textura Granulado Grueso 0000"
+                  />
+                </div>
+                <p class="color-code">0000</p>
+                <p class="color-name">Granulado Grueso</p>
+              </div>
+            </div>
+
+            <h6 class="modal-section-title">COLORES</h6>
+        <p>Esta carta de colores responde a un componente digital, no siendo fiel al producto en original, por lo que aconsejamos ver el muestrario de colores del profesional que lo coloca.</p>
+        
+        <div class="colors-grid row g-2 justify-content-center">
+            <div class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center">
+                <div class="color-swatch" style="background-color: #DBC39E;"></div> <p class="color-code">D-015</p>
+                <p class="color-name">Arena</p>
+            </div>
+
+            <div class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center">
+                <div class="color-swatch" style="background-color: #F5F5DC;"></div> <p class="color-code">D-019</p>
+                <p class="color-name">Blanco Tiza</p>
+            </div>
+
+            <div class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center">
+                <div class="color-swatch" style="background-color: #E2D3B8;"></div> <p class="color-code">D-022</p>
+                <p class="color-name">Crema</p>
+            </div>
+            
+            <div class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center">
+                <div class="color-swatch" style="background-color: #D8B78C;"></div> <p class="color-code">D-024</p>
+                <p class="color-name">Durazno</p>
+            </div>
+
+            <div class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center">
+                <div class="color-swatch" style="background-color: #7E8286;"></div> <p class="color-code">D-026</p>
+                <p class="color-name">Gris Cemento WW</p>
+            </div>
+
+            <div class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center">
+                <div class="color-swatch" style="background-color: #B4B4B4;"></div> <p class="color-code">D-029</p>
+                <p class="color-name">Gris Perla PC</p>
+            </div>
+
+            <div class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center">
+                <div class="color-swatch" style="background-color: #9C9C9C;"></div> <p class="color-code">D-030</p>
+                <p class="color-name">Gris Perla</p>
+            </div>
+
+            <div class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center">
+                <div class="color-swatch" style="background-color: #C8C2BB;"></div> <p class="color-code">D-037</p>
+                <p class="color-name">Piedra Clara</p>
+            </div>
+
+            <div class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center">
+                <div class="color-swatch" style="background-color: #AD9E8C;"></div> <p class="color-code">D-038</p>
+                <p class="color-name">Piedra París</p>
+            </div>
+
+            <div class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center">
+                <div class="color-swatch" style="background-color: #CA5C4F;"></div> <p class="color-code">D-041</p>
+                <p class="color-name">Rojo Coral</p>
+            </div>
+
+            <div class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center">
+                <div class="color-swatch" style="background-color: #A03D3D;"></div> <p class="color-code">D-042</p>
+                <p class="color-name">Rojo Ladrillo</p>
+            </div>
+
+            <div class="col-4 col-sm-3 col-md-2 col-lg-2 color-item text-center">
+                <div class="color-swatch" style="background-color: #DBA7A7;"></div> <p class="color-code">D-043</p>
+                <p class="color-name">Rosa Viejo</p>
+            </div>
+        </div>
           <div class="modal-footer justify-content-between">
             <a
               href="TU_LINK_MERCADO_LIBRE_REVOQUE_COLOR"
@@ -1201,6 +1836,55 @@
         </div>
       </div>
     </div>
+    <!-- Selladores -->
+    <div class="modal fade" id="selladoresProductModal" tabindex="-1" aria-labelledby="selladoresProductModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="selladoresProductModalLabel">SELLADORES</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body product-detail-modal"> <h6 class="modal-section-title">DESCRIPCIÓN</h6>
+            <p>Sean al agua, acrílicos o poliuretánicos tienen la finalidad de saturar la porosidad de los endurecedores para impedir la penetración del agua, tierra, aceites, etc. en el material, confiriendo de esta manera mayor calidad de terminación, dureza y facilidad de mantenimiento.</p>
+
+            <h6 class="modal-section-title">VENTAJAS</h6>
+            <p><strong>SELLADOR AL AGUA:</strong></p>
+            <p>En el caso de DURO FIX, el sellador es acrílico al agua que tiene la finalidad de tapar los poros, e impermeabilizar la superficie para evitar la penetración de líquidos y manchas.</p>
+            <ul class="icon-list">
+              <li><i class="bi bi-check-circle"></i> Conviene aplicar un mínimo de tres manos en paredes y en pisos hasta cinco manos. Va a depender del clima y de la porosidad y la absorción y el consumo aproximado para 30 m2, es de 5 litros. El brillo que adquiere el piso cuando el sellador está recién aplicado, se va perdiendo con el uso. Para mantener el brillo se debe encerar periódicamente (de 1 semana a 2) con cera líquida natural al agua. La aplicación debe hacerse en ambos casos con un pasacera de poliéster y dejar secar entre mano y mano, antes de pisar.</li>
+              <li><i class="bi bi-check-circle"></i> Para el sellado de paredes se procede de la misma manera, no es necesario encerar ya que al no haber fricción, el brillo se mantiene siempre.</li>
+              <li><i class="bi bi-check-circle"></i> No diluir, y aplicar tal cual se presenta. En caso que la superficie a sellar esté manchada o con imperfecciones, conviene pasar una máquina lustradora con paños de bruñido, de esta forma se empareja el color y la impresión es más duradera.</li>
+              <li><i class="bi bi-check-circle"></i> Siempre que se efectúe este proceso es importante eliminar todo vestigio de polvo o pelusa mediante el uso de una aspiradora.</li>
+            </ul>
+
+            <p><strong>SELLADOR POLIURETÁNICO:</strong></p>
+            <p>De características similares al acrílico, se aconseja colocar en baños, cocinas y exteriores como última mano porque es más duro.</p>
+            <ul class="icon-list">
+              <li><i class="bi bi-check-circle"></i> Resistente al agua y los álcalis.</li>
+              <li><i class="bi bi-check-circle"></i> No es afectado por los rayos ultravioletas.</li>
+            </ul>
+
+            <p><strong>SELLADOR AL SOLVENTE:</strong></p>
+            <p>Este sellador acrílico al solvente es una solución con una densidad menos fluida que el sellador al agua, por lo que debe aplicarse con rodillo para epoxi.</p>
+            <ul class="icon-list">
+              <li><i class="bi bi-check-circle"></i> El mismo se utiliza para sellar pisos de hormigón.</li>
+              <li><i class="bi bi-check-circle"></i> Demora un poco más en secar que el sellador al agua, pero es más duro y forma una película delgada que impide la absorción de cualquier líquido, aceite o polvo.</li>
+              <li><i class="bi bi-check-circle"></i> Facilita la limpieza de manos y herramientas el uso de thinner o xileno.</li>
+              <li><i class="bi bi-check-circle"></i> No diluir, no exponer a altas temperaturas y mantener alejado del alcance de los niños.</li>
+              <li><i class="bi bi-check-circle"></i> Mientras dure el proceso de secado, mantener el lugar ventilado.</li>
+            </ul>
+
+            </div>
+          <div class="modal-footer justify-content-between">
+            <a href="TU_LINK_MERCADO_LIBRE_SELLADORES" class="btn btn-warning" target="_blank">
+                <i class="bi bi-cart"></i> Comprar en Mercado Libre
+            </a>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Preguntas Frecuentes -->
     <div
       class="modal fade"
       id="faqModal"
@@ -1254,6 +1938,7 @@
         </div>
       </div>
     </div>
+
     <!-- END MODALES CARRUSEL -->
   </body>
 </html>
