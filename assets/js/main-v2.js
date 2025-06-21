@@ -123,3 +123,53 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 }); // CIERRE DEL addEventListener "DOMContentLoaded" PRINCIPAL
+
+window.addEventListener("load", () => {
+  /*
+   * =================================================================================
+   * PROJECTS SECTION - ISOTOPE PORTFOLIO FILTER
+   * Description: This code initializes the Isotope library to handle the filtering
+   * and layout of the project gallery.
+   * =================================================================================
+   */
+
+  // Seleccionamos el contenedor que envuelve todas las imágenes de la galería.
+  // Tu HTML usa la clase '.portfolio-container'.
+  let portfolioContainer = document.querySelector(".portfolio-container");
+
+  // Solo ejecutamos el código si encontramos ese contenedor en la página.
+  if (portfolioContainer) {
+    // Inicializamos Isotope en el contenedor.
+    // Le decimos que cada elemento a filtrar/ordenar tiene la clase '.portfolio-item'.
+    let portfolioIsotope = new Isotope(portfolioContainer, {
+      itemSelector: ".portfolio-item",
+      layoutMode: "masonry", // 'masonry' es ideal para imágenes de diferentes alturas.
+      percentPosition: true,
+    });
+
+    // Seleccionamos todos los botones de filtro.
+    // Tu HTML usa la clase '.portfolio-flters' en el <ul>.
+    let portfolioFilters = document.querySelectorAll(".portfolio-flters li");
+
+    // Añadimos un 'event listener' (un escuchador de clics) a cada botón.
+    portfolioFilters.forEach(function (filterEl) {
+      filterEl.addEventListener("click", function (e) {
+        e.preventDefault(); // Prevenimos el comportamiento por defecto del enlace.
+
+        // Quitamos la clase 'filter-active' de cualquier botón que la tenga.
+        portfolioFilters.forEach(function (el) {
+          el.classList.remove("filter-active");
+        });
+
+        // Añadimos la clase 'filter-active' solo al botón que acabamos de presionar.
+        this.classList.add("filter-active");
+
+        // Usamos Isotope para filtrar los elementos.
+        // El valor del filtro lo leemos del atributo 'data-filter' del botón.
+        portfolioIsotope.arrange({
+          filter: this.getAttribute("data-filter"),
+        });
+      });
+    });
+  }
+});
